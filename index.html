@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/itc-slider.css">
+  <script src="js/itc-slider.js" defer></script>
+  <script src="js/showMore.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+  <link href="https://allfont.ru/allfont.css?fonts=a-font-with-serifs-disordered" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>DE</title>
+  <style>
+    .dropdown .dropbtn {
+      font-size: 36px;
+      border: none;
+      outline: none;
+      color: ghostwhite;
+      padding: 7px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content-team {
+      display: none;
+      position: absolute;
+      background-color: #2a2a2a;
+      min-width: 197px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content-support{
+      display: none;
+      position: absolute;
+      background-color: #2a2a2a;
+      min-width: 249px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content-team a {
+      float: none;
+      color: #ffffff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content-support a{
+      float: none;
+      color: #ffffff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #707070FF;
+      color: #000000;
+    }
+
+    .dropdown-content-team a:hover {
+      background-color: #707070FF;
+      color: black;
+    }
+
+    .dropdown-content-support a:hover{
+      background-color: #707070FF;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content-team  {
+      display: block;
+    }
+    .dropdown:hover .dropdown-content-support{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div class="_container">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu_item">
+              <a href="#sec1" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <div class="dropdown">
+                <button class="dropbtn">Команда
+                </button>
+                <div class="dropdown-content-team">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                  <a href="#">Link 6</a>
+                  <a href="#">Link 7</a>
+                  <a href="#">Link 8</a>
+                </div>
+              </div>
+            </li>
+            <li class="menu_item">
+              <a href="#sec2" class="menu__link">Сборки</a>
+            </li>
+            <li class="menu__item">
+              <div class="dropdown">
+                <button class="dropbtn">Поддержка
+                </button>
+                <div class="dropdown-content-support">
+                  <a href="https://discord.gg/XBQ5YGdEBv" target="_blank">Дискорд</a>
+                  <a href="https://vk.com/public215492987" target="_blank">ВК</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="sec1">
+    <div class="intro_inner">
+      <h1 class="title">DARK<p>EARTH</p></h1>
+      <span class="title">---------</span>
+    </div>
+      <div class="container__features">
+        <h2 class="features_head">Почему мы?</h2>
+        <div class="features">
+          <div class="features_item">
+            <img src="img/tools.png" alt="..." class="feature_icon" width="128" height="128">
+            <h4 class="feature_title">ПОСТОЯННОЕ ОБНОВЛЕНИЕ УЖЕ СУЩЕСТВУЮЩИХ СБОРОК.</h4>
+            <p class="features_description">
+              После выхода сборки, мы поддерживаем её функцианальность (исправляем баги, недочеты, вылеты). Вы можете спокойно задавать интересующие вас вопросы в нашем дискорде.
+            </p>
+          </div>
+          <div class="features_item">
+            <img src="img/book.png" alt="..." class="feature_icon" width="128" height="128">
+            <h4 class="feature_title">НАЛИЧИЕ КВЕСТОВ С ОПИСАНИЯМИ В БОЛЬШИНСТВЕ СБОРОК.</h4>
+            <p class="features_description">
+              Почти все наши сборки имеют большое количество квестов с подробным описанием и вознаграждением. Квесты не дают запустаться в пути прохождения сборки, а описания помогают разобраться в механизмах и предметах.
+            </p>
+          </div>
+          <div class="features_item">
+            <img src="img/gear.png" alt="..." class="feature_icon" width="128" height="128">
+            <h4 class="feature_title">ИНТЕРЕСНЫЕ МОДЫ, ПОЛНОЦЕННАЯ РУСИФИКАЦИЯ.</h4>
+            <p class="features_description">
+              Моды в наших сборках полностью русифицированы, крафты изменены и связаны между другими модами, для того, что бы вы смогли равномерно и интересно изучать все моды.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Image Hover-->
+    <h2 id="sec2" class="features_intro">НАШИ СБОРКИ</h2>
+    <section class="project">
+      <div class="container">
+          <img src="https://www.global-esports.news/wp-content/uploads/2022/05/Minecraft-Update-1.19.jpg" alt="..." class="image">
+          <div class="overlay">
+            <h1>Dark Earth</h1>
+            <p>Lorem ipsum dolor sit amet. Vel pariatur fugit id quisquam deleniti est expedita voluptatem qui dolores
+            perspiciatis et voluptatibus <span id="dots">...</span><span id="more">fugiat sed soluta quia. Et aliquid quasi sed provident quia vel animi consequatur
+            et mollitia quisquam rem rerum explicabo ea voluptatum molestias. Vel maiores unde ab ullam delectus et explicabo
+            accusantium et enim sunt sed aperiam voluptatem eos maiores facilis vel consectetur numquam.
+            Vel soluta repellendus qui enim pariatur est minus fugiat. Sit quae exercitationem nobis tempore ea e xcepturi animi ea sapiente quos est
+            unde voluptate. Aut rerum cumque est libero tempore vel aperiam voluptatem ea voluptas nihil 33 dolore accusantium aut voluptatem odit.
+            Est eveniet illum aut soluta voluptas aut enim odit. Ut dolor magnam sit dolore nihil quo repellendus eius ea nobis voluptatem?
+              </span></p>
+            <p><a href="https://vk.com" target="_blank"><button class="download_google">Скачать с Google Disk</button></a></p>
+            <p><a href="https://vk.com" target="_blank"><button class="download_curseforge">Скачать с CurseForge</button></a></p>
+            <button class="btn gray" onclick="showMore()" id="myBtn">Читать дальше</button>
+          </div>
+      </div>
+    </section>
+    <div class="footer_container">
+      <footer>
+        <div class="footer_info">
+          <div class="footer_left">
+            <p class="footer_copyright">@DarkEarth 2022-2022</p>
+          </div>
+          <div class="footer_right">
+            <p class="footer_dev">Designed by <a href="https://github.com/GalievDev" target="_blank">GalievDev</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
